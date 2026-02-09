@@ -1,4 +1,4 @@
-// Team.js
+
 import React from "react";
 import { RiLinkedinFill } from "react-icons/ri";
 import { HiMiniUserGroup } from "react-icons/hi2";
@@ -40,7 +40,7 @@ const TeamMemberCard = ({ member }) => (
     flex flex-col
     w-full sm:w-[80%] md:w-[32%] lg:w-[23%]
   ">
-    {/* Image */}
+  
     <div className="
       w-full
       h-40 sm:h-56 md:h-60
@@ -55,7 +55,6 @@ const TeamMemberCard = ({ member }) => (
       />
     </div>
 
-    {/* Content */}
     <div className="mt-3 sm:mt-4 flex items-center justify-between">
       <div>
         <h3 className="font-semibold text-gray-900 text-xs sm:text-lg">
@@ -89,7 +88,6 @@ const TeamMembers = () => {
   return (
     <section className="relative w-full py-14 md:py-20 px-4 sm:px-6 md:px-20 flex flex-col items-center justify-center overflow-hidden">
 
-      {/* Background Memphis Shapes */}
       <div className="absolute inset-0 -z-10 pointer-events-none hidden md:block">
         <div className="absolute top-8 left-10 w-3 h-3 bg-[#cfe1ff] rounded-full"></div>
         <div className="absolute top-24 right-16 w-3 h-3 bg-[#ffd978] rounded-full"></div>
@@ -100,7 +98,6 @@ const TeamMembers = () => {
         <div className="absolute bottom-6 right-6 w-14 h-14 bg-[#ffce4d] rounded-full border-8 border-white rotate-45"></div>
       </div>
 
-      {/* Heading */}
       <div className="text-center mb-14 relative z-10">
         <div className="inline-flex items-center gap-2 border border-[#d5d9ff] text-[#5b56e8] px-4 py-1 rounded-full text-sm font-semibold">
           <HiMiniUserGroup />
@@ -117,17 +114,17 @@ const TeamMembers = () => {
         </p>
       </div>
 
-      {/* Grid */}
+      
       <div className="relative w-full max-w-7xl flex flex-col gap-8 z-10">
 
-        {/* Row 1 */}
+      
         <div className="grid grid-cols-2 gap-6 md:flex md:items-center md:justify-center lg:justify-start lg:gap-10">
           <TeamMemberCard member={teamMembers[0]} />
           <TeamMemberCard member={teamMembers[1]} />
 
-          {/* Decorative bubbles (desktop only) */}
+        
                     <div className=" hidden relative flex md:flex flex-1 h-24 md:h-64 opacity-40 md:opacity-100">
-    {/* Example bubbles */}
+    
     <span className="absolute w-3 h-3 bg-purple-500 rounded-full opacity-70 animate-bubble" style={{ top: '10%', left: '20%' }}></span>
     <span className="absolute w-4 h-4 bg-blue-400 rounded-full opacity-60 animate-bubble2" style={{ top: '50%', left: '60%' }}></span>
     <span className="absolute w-2 h-2 bg-white rounded-full opacity-50 animate-bubble" style={{ top: '30%', left: '40%' }}></span>
@@ -136,10 +133,10 @@ const TeamMembers = () => {
   </div>
         </div>
 
-        {/* Row 2 */}
+        
         <div className="grid grid-cols-2 gap-6 md:flex md:items-center md:justify-center lg:justify-start lg:gap-10">
                     <div className="hidden relative flex md:flex flex-1 h-24 md:h-64 opacity-40 md:opacity-100">
-    {/* Example bubbles */}
+    
     <span className="absolute w-3 h-3 bg-purple-500 rounded-full opacity-70 animate-bubble" style={{ top: '10%', left: '20%' }}></span>
     <span className="absolute w-4 h-4 bg-blue-400 rounded-full opacity-60 animate-bubble2" style={{ top: '50%', left: '60%' }}></span>
     <span className="absolute w-2 h-2 bg-white rounded-full opacity-50 animate-bubble" style={{ top: '30%', left: '40%' }}></span>
@@ -153,7 +150,7 @@ const TeamMembers = () => {
 
       </div>
 
-      {/* Button */}
+      
       <Link
         to="/team"
         className="group inline-flex items-center mt-10 px-6 py-3 bg-gradient-to-r from-purple-500 to-purple-700 text-white rounded-xl shadow-lg hover:from-purple-600 hover:to-purple-800 transition font-medium z-10"

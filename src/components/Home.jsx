@@ -51,10 +51,10 @@ export default function HomePage() {
 
       </div>
 
-      {/* GRADIENT BEAM */}
+    
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500" />
 
-      {/* FLOATING PULSE RING */}
+      
       <motion.div
         className="absolute top-40 right-32 w-32 h-32 rounded-full border-4 border-blue-500 opacity-30"
         animate={{ scale: [1, 1.2, 1] }}
@@ -63,7 +63,7 @@ export default function HomePage() {
 
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-        {/* LEFT SIDE – HEADLINE */}
+      
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -106,21 +106,21 @@ export default function HomePage() {
           </div>
         </motion.div>
 
-        {/* RIGHT SIDE – 3D CODE CARD */}
+    
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9 }}
           className="relative"
         >
-          {/* GLASS BACK PANEL */}
+      
           <motion.div
             className="absolute inset-0 -z-10 rounded-3xl bg-white/20 backdrop-blur-xl shadow-2xl border border-white/30"
             animate={{ y: [-10, 10, -10] }}
             transition={{ duration: 5, repeat: Infinity }}
           />
 
-          {/* CODE BLOCK */}
+          
           <motion.div
             className="relative rounded-2xl bg-gray-900 text-gray-100 p-6 shadow-2xl font-mono text-sm border border-gray-700"
             animate={{ rotateY: [0, 6, 0], rotateX: [0, -4, 0] }}

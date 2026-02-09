@@ -26,20 +26,20 @@ export default function TemplateCarousel() {
     <div className=" flex items-center justify-center px-4 py-4 md:py-15">
       <div className="relative max-w-6xl w-full h-[44vh] sm:h-[58vh] md:h-[80vh] rounded-xl md:rounded-3xl overflow-hidden shadow-xl">
 
-        {/* IMAGE */}
+      
         <img
           src={images[current]}
           alt="template"
           className="w-full h-full object-cover transition-all duration-500"
         />
 
-        {/* LEFT BUTTON */}
+        
         <button
           onClick={prevSlide} className="absolute left-3 md:left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 w-8 h-8 md:w-10 md:h-10 rounded-full shadow flex items-center justify-center text-lg md:text-xl">
           ‹
         </button>
 
-        {/* RIGHT BUTTON */}
+    
         <button
           onClick={nextSlide} className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 w-8 h-8 md:w-10 md:h-10 rounded-full shadow flex items-center justify-center text-lg md:text-xl">
           ›

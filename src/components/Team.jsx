@@ -201,7 +201,7 @@ const TeamMemberCard = ({ member }) => {
         />
       </div>
 
-      {/* Text */}
+    
       <div className="mt-4 flex items-center justify-between">
         <div>
           <h3 className="font-montserrat font-semibold text-gray-900 text-lg">

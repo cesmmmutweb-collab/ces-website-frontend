@@ -10,7 +10,6 @@ import ChatfinityHero from "./components/ChatfinityHero";
 function App() {
   return (
     <Routes>
-      {/* Home page route */}
       <Route 
         path="/" 
         element={
@@ -23,7 +22,6 @@ function App() {
         } 
       />
 
-      {/* Teams page route */}
       <Route path="/team" element={<Team />} />
     </Routes>
   );
